@@ -1,0 +1,210 @@
+/* KeyFrames */
+
+
+/* 
+@keyframes fade {
+    0% {
+        opacity: 0.03;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.03;
+    }
+} */
+
+@keyframes blinkInput {
+    0% {}
+
+    60% {
+        border: 2px solid var(--red);
+        transition: all 0.1s linear;
+        /* color: var(--red) */
+      /*   border-bottom: 2px solid #D8000C;
+        border-left: 2px solid #D8000C;
+        border-right: 2px solid #D8000C; */
+    }
+}
+
+@keyframes blinkTxt {
+    0% {}
+
+    60% {
+        color: var(--red);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade1 {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade3 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade4 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade5 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* @keyframes room-fade-in { */
+/* 0% {
+        opacity: 0;
+    } */
+/* 0% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+@keyframes room-fade-in {
+
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* .fade-in {
+    opacity: 1 !important;
+}
+
+.fade-out {
+    opacity: 0 !important;
+} */
