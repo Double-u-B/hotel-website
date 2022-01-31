@@ -1,2 +1,2 @@
 # hotel-website
-Hotel website with slider, calendar, reserwation and other interesting logic in Vanilla JS. (RWD)
+Hotel website with image slider, calendar, reservation, validation and other interesting logic in Vanilla JS. (RWD) 
