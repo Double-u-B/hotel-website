@@ -10,6 +10,7 @@ import {
   personNmbCon,
   gratitude,
 } from "../main.js";
+import { rooms } from "./data.js";
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
@@ -30,10 +31,15 @@ const checkConditionsLoop = () => {
         e.target.parentElement.previousElementSibling.children[2].innerText;
 
       roomsCon.innerHTML = showRoom(name, img, board, deposit);
+      if ($(".room") && window.innerWidth > 600) {
+        roomsCon.style.overflowY = "hidden";
+      }
+      roomsCon.scrollTo(0, 0);
       const backBtn = $(".back-btn");
 
       backBtn.addEventListener("click", () => {
         reservCon.classList.remove("avoid-clicks");
+        roomsCon.removeAttribute("style");
         roomsCon.innerHTML = showRooms();
         checkConditionsLoop();
       });

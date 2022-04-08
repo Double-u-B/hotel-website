@@ -14,7 +14,7 @@ const showRooms = () => {
                     <div class="booking-room-info">
                         <h3>${title.toUpperCase()}</h3>
                         <div class="room-info-txt">
-                            <p><img src="icons/shield.png" alt="">Covid-19 Free. Full apartment disinfection.
+                            <p><img src="icons/shield.png" alt="">Covid-19 disinfection.
                             </p>
                             <p><img src="icons/decline.png" alt="">Nonrefundable offer</p>
                             <p><img src="icons/money.png" alt="">${deposit} deposit</p>

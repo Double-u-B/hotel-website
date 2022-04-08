@@ -35,7 +35,7 @@ const summary = (name, total, deposit) => {
                                     target="blank">reservation</a>. <span>*</span> </label>
 
                             <input type="checkbox" id="email-offers">
-                            <label for="email-offers">I would like to receive exclusive offers, vouchers, promotions, and information about your products and events.</label>
+                            <label for="email-offers">I would like to receive exclusive offers, vouchers and information about your products and events.</label>
 
                         </div>
                         <div class="additional-info">

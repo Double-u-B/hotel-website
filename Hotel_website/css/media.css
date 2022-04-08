@@ -1,1047 +1,1360 @@
 @media screen and (max-width: 1364px) {
-    .book-online button {
-        font-size: 1.05rem;
-    }
+  .book-online button {
+    font-size: 1.05rem;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        height: 85%;
-        right: -9rem;
-    }
+  .welcome-info,
+  .restaurant-info {
+    height: 85%;
+    width: 52%;
+    right: -9rem;
+  }
 
-    .welcome-info h1,
-    .restaurant-info h4,
-    .restaurant-info h1,
-    .spa-info h4,
-    .spa-info h1 {
-        margin: 1rem 0;
-    }
+  .welcome-info p,
+  .restaurant-info p,
+  .spa-info p {
+    font-size: 1rem;
+  }
 
-    .welcome-info p,
-    .restaurant-info p,
-    .spa-info p {
-        margin: 0.8rem;
-        font-size: 1rem;
-    }
+  .info-text h1 {
+    margin: 0.5rem 0;
+  }
 
-    .info-text h1 {
-        margin: 0.5rem 0;
-    }
+  .info-text p {
+    font-size: 1rem;
+  }
 
-    .info-text p {
-        font-size: 1rem;
-    }
+  .rooms-title {
+    bottom: -5.7rem;
+    height: 30%;
+    min-width: 12rem;
+  }
 
-    .rooms-title {
-        bottom: -5.7rem;
-        height: 30%;
-        min-width: 12rem;
-    }
+  .restaurant-info {
+    width: 62%;
+    left: -9rem;
+  }
 
-    .restaurant-info {
-        width: 42%;
-        left: -9rem;
-    }
+  .spa-info {
+    width: 42%;
+    height: 450px;
+  }
 
-    .spa-info {
-        width: 42%;
-        height: 450px;
-    }
+  .spa-info h1 {
+    margin-top: 0;
+  }
 
-    .spa-info h1 {
-        margin-top: 0;
-    }
+  .spa-info p {
+    margin: 0.5rem 1.5rem;
+  }
 
-    .spa-info p {
-        margin: 0.5rem 1.5rem;
-    }
+  footer .address p,
+  footer .newsletter p,
+  .newsletter input {
+    font-size: 0.98rem;
+  }
 
-    footer .address p,
-    footer .newsletter p,
-    .newsletter input {
-        font-size: 0.98rem;
-    }
+  .newsletter h2,
+  .media h2,
+  .thank-you h3 {
+    font-size: 1.3rem;
+    line-height: 1.1;
+  }
 
-    .newsletter h2,
-    .media h2,
-    .thank-you h3 {
-        font-size: 1.3rem;
-        line-height: 1.1;
-    }
+  footer .social-icons {
+    width: 25%;
+  }
 
-    footer .social-icons {
-        width: 25%;
-    }
+  .social-icons .faceb {
+    transform: translateY(-0.5px);
+  }
+}
 
-    .social-icons .faceb{
-        transform: translateY(-0.5px);
-    }
+@media screen and (max-width: 1200px) {
+  .modal-container {
+    width: 88vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    nav .header-links {
-        font-size: 1.1rem;
-    }
+  nav .header-links {
+    font-size: 1.1rem;
+  }
 
-    .offers {
-        min-width: 39vw;
-    }
+  .calendar-box {
+    width: 55%;
+  }
 
-    .offers-btns button {
-        width: 10%;
-    }
+  .offers {
+    min-width: 39vw;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        width: 47%;
-        height: 87%;
-        right: -7rem;
-    }
+  .offers-btns button {
+    width: 10%;
+  }
 
-    .rooms-img-container {
-        width: 95%;
-    }
+  .welcome-info,
+  .restaurant-info {
+    width: 62%;
+    height: 87%;
+    right: -7rem;
+  }
 
-    .restaurant-info {
-        left: -7rem;
-    }
+  .rooms-img-container {
+    width: 95%;
+  }
 
-    .restaurant-info h1,
-    .spa-info h1 {
-        margin-bottom: 0.3rem;
-    }
+  .restaurant-info {
+    left: -7rem;
+  }
 
-    .spa-info {
-        width: 50%;
-        height: 440px;
-    }
+  .restaurant-info h1,
+  .spa-info h1 {
+    margin-bottom: 0.3rem;
+  }
 
-    .spa-info p {
-        margin: 0.5rem 1rem;
-    }
+  .spa-info {
+    width: 50%;
+    height: 440px;
+  }
 
-    footer .newsletter {
-        width: 31%;
-    }
+  .spa-info p {
+    margin: 0.5rem 1rem;
+  }
 
-    footer .address p,
-    footer .newsletter p,
-    .newsletter input {
-        font-size: 1rem;
-    }
+  footer .newsletter {
+    width: 31%;
+  }
 
-    .newsletter .envelop {
-        width: 2.5rem;
-    }
+  footer .address p,
+  footer .newsletter p,
+  .newsletter input {
+    font-size: 1rem;
+  }
+
+  .newsletter .envelop {
+    width: 2.5rem;
+  }
+
+  .reservation {
+    justify-content: flex-start;
+    padding-left: 1.1rem;
+  }
+
+  .modal-container {
+    width: 90vw;
+  }
+
+  /* Reservation Modal */
+  .calendar-container {
+    left: 29%;
+    min-width: 350px;
+  }
+
+  /* Summary */
+  .booking-rooms .summary{
+    grid-template-columns: repeat(29, 1fr);
+  }
+  .sum-data {
+    grid-column: 2/17;
+    grid-row: 3/25;
+  }
+
+  .sum-data-confirmations {
+    font-size: 0.85rem;
+    grid-column: 2/25;
+  }
+
+  .sum-payment {
+  grid-column: 18/29;
+    grid-row: 4/25;
+
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .logo img {
-        margin-left: 0.2rem;
-        width: 7rem;
-        height: 4.5rem;
-    }
+  .logo img {
+    margin-left: 0.2rem;
+    width: 7rem;
+    height: 4.5rem;
+  }
 
-    nav .header-links,
-    .social {
-        display: none;
-    }
+  nav .header-links,
+  .social {
+    display: none;
+  }
 
-    .logo,
-    .book-online,
-    .menu {
-        width: 30%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .logo,
+  .book-online,
+  .menu {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .logo {
-        justify-content: start;
-        margin-left: 1rem;
-    }
+  .logo {
+    justify-content: start;
+    margin-left: 1rem;
+  }
 
-    .menu {
-        flex-direction: row;
-        font-size: 1.2rem;
-        justify-content: flex-end;
-    }
+  .menu {
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+  }
 
-    .menu p {
-        margin: 0 0.5rem;
-    }
+  .menu p {
+    margin: 0 0.5rem;
+  }
 
-    .menu div {
-        width: 30%;
-        height: 100%;
-        display: grid;
-        place-content: center;
-    }
+  .menu div {
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+  }
 
-    .menu .fas {
-        margin: 0;
-        padding: 0;
-        font-size: 1.3rem;
-        transform: translateY(2px);
-        cursor: pointer;
-        transition: all 0.1s ease-in-out;
-    }
+  .menu .fas {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    transform: translateY(2px);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
 
-    .menu .fas:active {
-        transform: scale(0.7) translateY(2px);
-    }
+  .menu .fas:active {
+    transform: scale(0.7) translateY(2px);
+  }
 
-    .book-online {
-        height: 100%;
-        width: 40%;
-        border-radius: 0.15rem;
-        display: grid !important;
-    }
+  .book-online {
+    height: 100%;
+    width: 40%;
+    border-radius: 0.15rem;
+    display: grid !important;
+  }
 
-    .book-online button {
-        font-size: 1.2rem;
-        color: #9a8143;
-    }
+  .book-online button {
+    font-size: 1.2rem;
+    color: #9a8143;
+  }
 
-    .hero-container,
-    #spa {
-        background-attachment: scroll;
-    }
+  .calendar-box {
+    width: 65%;
+  }
 
-    .fa-long-arrow-alt-left:hover,
-    .fa-long-arrow-alt-right:hover {
-        color: #0b1d62;
-    }
+  .hero-container,
+  #spa {
+    background-attachment: scroll;
+  }
 
-    .rooms-title button:hover {
-        color: #fff;
-    }
+  .fa-long-arrow-alt-left:hover,
+  .fa-long-arrow-alt-right:hover {
+    color: #0b1d62;
+  }
 
-    .offers-container {
-        width: 95vw;
-    }
+  .rooms-title button:hover {
+    color: #fff;
+  }
 
-    .offers {
-        min-width: 43.5vw;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2.5px 8.5px 0px;
-    }
+  .offers-container {
+    width: 95vw;
+  }
 
-    .offers:hover {
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2.5px 8.5px 0px;
-    }
+  .offers {
+    min-width: 43.5vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2.5px 8.5px 0px;
+  }
 
-    .offer-title {
-        height: 25%;
-        bottom: 0;
-        justify-content: start;
-    }
+  .offers:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2.5px 8.5px 0px;
+  }
 
-    .offer-title h1 {
-        font-size: 1.3rem;
-        margin: 0 1rem;
-    }
+  .offer-title {
+    height: 25%;
+    bottom: 0;
+    justify-content: start;
+  }
 
-    .offer-details p {
-        margin: 0 0 0 1rem;
-    }
+  .offer-title h1 {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
 
-    .offer-title :nth-child(3),
-    .offer-title :nth-child(4) {
-        display: none;
-    }
+  .offer-details p {
+    margin: 0 0 0 1rem;
+  }
 
-    #welcome,
-    #restaurant {
-        height: 120vh;
-        overflow-x: hidden;
-        display: flex;
-        align-items: start;
-    }
+  .offer-title :nth-child(3),
+  .offer-title :nth-child(4) {
+    display: none;
+  }
 
-    .welcome-img,
-    .restaurant-img {
-        width: 96.5%;
-        height: 50%;
-        margin-top: 2rem;
-    }
+  #welcome,
+  #restaurant {
+    height: 130vh;
+    overflow-x: hidden;
+  }
 
-    .welcome-img-container,
-    .restaurant-img-container {
-        width: 100%;
-        height: 100%;
-    }
+  .welcome-img,
+  .restaurant-img {
+    width: 96.5%;
+    height: 100%;
+    position: relative;
+  }
 
-    .welcome-img-container img {
-        object-position: 100% 80%;
-    }
+  .welcome-img-container,
+  .restaurant-img-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 45%;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -85%;
-        width: 93.5%;
-        height: 280px;
-        right: 0;
-        left: 0;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 1.5rem 1.5rem 1.5rem;
-        background-color: rgba(238, 236, 236, 0.568);
-        font-size: 1rem;
-        border-radius: 0.15rem;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    }
+  .welcome-img-container img {
+    object-position: 100% 80%;
+  }
 
-    .welcome-info h1,
-    .restaurant-info h1 {
-        margin: 0.2rem 0;
-    }
+  .welcome-info,
+  .restaurant-info {
+    bottom: 4rem;
+    left: 0;
+    right: 0;
+    width: 93.5%;
+    height: 350px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(238, 236, 236, 0.568);
+    font-size: 1rem;
+    border-radius: 0.15rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
 
-    .welcome-info::before,
-    .restaurant-info:before {
-        content: none;
-    }
+  .welcome-info::before,
+  .restaurant-info:before {
+    content: none;
+  }
 
-    #rooms {
-        height: 120vh;
-    }
+  #rooms {
+    height: 120vh;
+  }
 
-    .rooms-img {
-        border-radius: 0.15rem;
-    }
+  .rooms-img {
+    border-radius: 0.15rem;
+  }
 
-    .rooms-img img {
-        border-radius: 0.15rem;
-        box-shadow: none;
-    }
+  .rooms-img img {
+    border-radius: 0.15rem;
+    box-shadow: none;
+  }
 
-    .rooms-info {
-        margin-top: 2rem;
-    }
+  .rooms-info .info-text {
+    width: 90%;
+  }
 
-    .rooms-info .info-text {
-        width: 90%;
-    }
+  .info-text p {
+    font-size: 1rem;
+    margin: 0 0.5rem;
+  }
 
-    .info-text p {
-        font-size: 1rem;
-        margin: 0 0.5rem;
-    }
+  .rooms-img-container {
+    width: 96%;
+    height: 60%;
+    overflow: visible;
+    margin-bottom: 2rem;
+    border-radius: 0.15rem;
+  }
 
-    .rooms-img-container {
-        width: 96%;
-        height: 60%;
-        overflow: visible;
-        margin-bottom: 2rem;
-        border-radius: 0.15rem;
-    }
+  .rooms-img:hover .rooms-title {
+    border-top-right-radius: 0;
+    box-shadow: none;
+  }
 
-    .rooms-img:hover .rooms-title {
-        border-top-right-radius: 0;
-        box-shadow: none;
-    }
+  .rooms-title {
+    bottom: 0;
+    width: 60%;
+    height: 20%;
+    flex-wrap: wrap;
+    border-top-right-radius: 0.15rem;
+    border-bottom-left-radius: 0.15rem;
+    background-color: rgba(255, 255, 255, 0.644);
+  }
 
-    .rooms-title {
-        bottom: 0;
-        width: 60%;
-        height: 20%;
-        flex-wrap: wrap;
-        border-top-right-radius: 0.15rem;
-        border-bottom-left-radius: 0.15rem;
-        background-color: rgba(255, 255, 255, 0.644);
-    }
+  .rooms-title h1 {
+    margin: 0.6rem 0 0 1rem;
+  }
 
-    .rooms-title h1 {
-        margin: 0.6rem 0 0 1rem;
-    }
+  .rooms-properties {
+    margin-top: 0.7rem;
+    width: 12rem;
+    justify-content: space-around;
+  }
 
-    .rooms-properties {
-        margin-top: 0.7rem;
-        width: 12rem;
-        justify-content: space-around;
-    }
+  .rooms-btns {
+    width: 100%;
+    left: 0;
+    bottom: 50%;
+    justify-content: space-between;
+  }
 
-    .rooms-btns {
-        width: 100%;
-        left: 0;
-        bottom: 50%;
-        justify-content: space-between;
-    }
+  .rooms-btns button {
+    border-radius: 0;
+    width: 8%;
+    background-color: rgba(255, 255, 255, 0.568);
+  }
 
-    .rooms-btns button {
-        border-radius: 0;
-        width: 8%;
-        background-color: rgba(255, 255, 255, 0.568);
-    }
+  .rooms-btns button:first-child {
+    border-top-right-radius: 0.15rem;
+    border-bottom-right-radius: 0.15rem;
+  }
 
-    .rooms-btns button:first-child {
-        border-top-right-radius: 0.15rem;
-        border-bottom-right-radius: 0.15rem;
-    }
+  .rooms-btns button:last-child {
+    border-top-left-radius: 0.15rem;
+    border-bottom-left-radius: 0.15rem;
+    border-top-right-radius: 0;
+  }
 
-    .rooms-btns button:last-child {
-        border-top-left-radius: 0.15rem;
-        border-bottom-left-radius: 0.15rem;
-        border-top-right-radius: 0;
-    }
+  .restaurant-info h4 {
+    margin: 0.5rem;
+  }
 
-    .restaurant-info h4 {
-        margin: 0.5rem;
-    }
+  .spa-info {
+    width: 58%;
+    height: 435px;
+    font-size: 1rem;
+  }
 
-    .spa-info {
-        width: 58%;
-        height: 435px;
-        font-size: 1rem;
-    }
+  footer {
+    height: 30vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-    footer {
-        height: 30vh;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+  footer .address,
+  footer .newsletter,
+  footer .media {
+    width: 40%;
+  }
 
-    footer .address,
-    footer .newsletter,
-    footer .media {
-        width: 40%;
-    }
+  footer .address {
+    order: 1;
+    font-size: 1rem;
+  }
 
-    footer .address {
-        order: 1;
-        font-size: 1rem;
-    }
+  footer .newsletter {
+    order: 3;
+    justify-content: space-around;
+    margin-top: 1rem;
+    border-top: 2px solid #9a814346;
+  }
 
-    footer .newsletter {
-        order: 3;
-        justify-content: space-around;
-        margin-top: 1rem;
-        border-top: 2px solid #9a814346;
-    }
+  footer .newsletter h2 {
+    font-size: 1.4rem;
+  }
 
-    footer .newsletter h2 {
-        font-size: 1.4rem;
-    }
+  footer .media {
+    order: 2;
+  }
 
-    footer .media {
-        order: 2;
-    }
+  footer .address img {
+    width: 40%;
+  }
 
-    footer .address img {
-        width: 40%;
-    }
+  footer .address p,
+  .newsletter input {
+    font-size: 1rem;
+  }
 
-    footer .address p,
-    .newsletter input {
-        font-size: 1rem;
-    }
+  /* Reservation Modal */
+  .reservation form {
+    width: 400px;
+  }
+
+  .booking-rooms {
+    padding: 1rem 0;
+    overflow-y: scroll;
+  }
+
+  .booking-room {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    height: 60%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .booking-room:last-child {
+    margin-bottom: 0;
+  }
+
+  .booking-room-img {
+    order: 2;
+    width: 40%;
+    height: 70%;
+  }
+
+  .booking-room-info {
+    width: 60%;
+    height: 70%;
+    order: 1;
+    padding: 0 1rem 0 0;
+    justify-content: space-between;
+  }
+
+  .booking-room-info button {
+    margin-left: 0;
+    width: 80px;
+  }
+
+  .booking-room-price {
+    width: 100%;
+    order: 3;
+    flex-direction: row;
+    height: 20%;
+    align-self: flex-end;
+    justify-content: space-between;
+  }
+
+  .booking-price {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 45%;
+    padding-right: 0;
+  }
+
+  .booking-price :nth-child(2) {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .price {
+    margin-top: 0;
+    margin-right: auto;
+    align-self: flex-start;
+  }
+
+  .booking-room-price button {
+    height: 100%;
+    width: 40%;
+    margin-right: 0;
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Room info */
+
+  .move-back button {
+    margin-right: 0.7rem;
+    align-self: flex-start;
+  }
+
+  .booking-rooms .room .room-txt-one p {
+    font-size: 1.1rem;
+  }
+
+  .booking-rooms .room .room-img {
+    grid-row: 3/16;
+  }
+  .booking-rooms .room .room-txt-one {
+    grid-row: 3/15;
+  }
+  .booking-rooms .room .room-txt-two {
+    grid-row: 17/25;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    #special-offers {
-        height: 70vh;
-    }
+  .calendar-box {
+    width: 77%;
+  }
 
-    .offers-container {
-        width: 97vw;
-    }
+  #special-offers {
+    height: 70vh;
+  }
 
-    .offers {
-        height: 80%;
-    }
+  .offers-container {
+    width: 97vw;
+  }
 
-    .offer-title {
-        height: 24%;
-    }
+  .offers {
+    height: 80%;
+  }
 
-    .offer-details :last-child {
-        display: none;
-    }
+  .offer-title {
+    height: 24%;
+  }
 
-    #welcome {
-        height: 125vh;
-    }
+  .offer-details :last-child {
+    display: none;
+  }
 
-    .welcome-img,
-    .restaurant-img {
-        width: 95%;
-        height: 35%;
-        margin-top: 5rem;
-    }
+  #welcome,
+  #restaurant {
+    height: 140vh;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -138%;
-        width: 90%;
-        height: 340px;
-    }
+  .welcome-img,
+  .restaurant-img {
+    width: 95%;
+  }
 
-    .welcome-info p,
-    .restaurant-info p {
-        margin: 0.8rem 0.2rem;
-    }
+  .welcome-img-container,
+  .restaurant-img-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: 40%;
+  }
 
-    .welcome-info h1,
-    .restaurant-info h1 {
-        margin: 0.5rem 0;
-    }
+  .welcome-info,
+  .restaurant-info {
+    width: 90%;
+    height: 380px;
+  }
 
-    .rooms-title {
-        width: 75%;
-    }
+  .welcome-info p,
+  .restaurant-info p {
+    margin: 0.8rem 0.2rem;
+  }
 
-    #restaurant {
-        height: 125vh;
-    }
+  .welcome-info h1,
+  .restaurant-info h1 {
+    margin: 0.5rem 0;
+  }
 
-    .restaurant-info {
-        bottom: -135%;
-        height: 330px;
-    }
+  .rooms-title {
+    width: 75%;
+  }
 
-    .spa-info {
-        width: 70%;
-        height: 440px;
-    }
+  .spa-info {
+    width: 70%;
+    height: 440px;
+  }
 
-    .spa-info p {
-        font-size: 1rem;
-    }
+  .spa-info p {
+    font-size: 1rem;
+  }
 
-    footer .address {
-        width: 45%;
-    }
+  footer .address {
+    width: 45%;
+  }
+
+  /* Reservation Modal */
+
+  .reservation form {
+    width: 300px;
+  }
+
+  .reservation form label input {
+    font-size: 1.15rem;
+  }
+
+  .reservation form .arrow {
+    height: 25px;
+    width: 25px;
+    top: 25%;
+  }
+
+  .persons .nbr-of-persons {
+    font-size: 1.4rem;
+  }
+
+  .booking-price {
+    width: 54%;
+  }
+
+  .booking-room-img {
+    height: 60%;
+  }
+
+  .calendar-container {
+    height: 60%;
+    top: 27%;
+    left: 35%;
+    min-width: 350px;
+  }
+
+  .calendar-container::before {
+    top: -40px;
+  }
+
+  .calendar-container.left::before {
+    left: 10%;
+  }
+
+  .calendar-container.right::before {
+    right: 40%;
+  }
+
+  .days div {
+    font-size: 1.3rem;
+  }
+
+  /* Room info */
+
+  .booking-rooms .room .room-img {
+    grid-row: 3/14;
+  }
+  .booking-rooms .room .room-txt-one {
+    grid-row: 3/14;
+  }
+  .booking-rooms .room .room-txt-two {
+    grid-row: 15/26;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .logo {
-        margin-left: 0.5rem;
-    }
+  .logo {
+    margin-left: 0.5rem;
+  }
 
-    .book-online {
-        width: 30%;
-    }
+  .book-online {
+    width: 30%;
+  }
 
-    .book-online button {
-        font-size: 1.1rem;
-    }
+  .book-online button {
+    font-size: 1.1rem;
+  }
 
-    .menu {
-        width: 30%;
-    }
+  .calendar-box {
+    width: 65%;
+    height: 15%;
+    grid-template-columns: auto auto 100px;
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-    .offers-container {
-        width: 95vw;
-    }
+  .calendar-box .date-from {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
 
-    .offers {
-        min-width: 88vw;
-    }
+  .calendar-box .date-to {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
 
-    .offer-title {
-        height: 25%;
-    }
+  .calendar-box button {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
 
-    .offers-btns button {
-        width: 20%;
-    }
+  .calendar-box .date-day,
+  .calendar-box .date-icon {
+    font-size: 2rem;
+  }
 
-    #welcome {
-        height: 125vh;
-    }
+  .date-month p:nth-child(2) {
+    display: none;
+  }
 
-    .welcome-img,
-    .restaurant-img {
-        width: 93.5%;
-        height: 35%;
-    }
+  .date-icon img {
+    width: 28px;
+    height: 28px;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -145%;
-        width: 88%;
-        height: 360px;
-    }
+  .menu {
+    width: 30%;
+  }
 
-    .welcome-info p,
-    .restaurant-info p,
-    .info-text p,
-    .spa-info p {
-        font-size: 0.96rem;
-    }
+  .offers-container {
+    width: 95vw;
+  }
 
-    .rooms-img-container {
-        width: 94%;
-        height: 50%;
-    }
+  .offers {
+    min-width: 88vw;
+  }
 
-    .rooms-title {
-        width: 100%;
-    }
+  .offer-title {
+    height: 25%;
+  }
 
-    .rooms-btns button {
-        width: 12%;
-    }
+  .offers-btns button {
+    width: 20%;
+  }
 
-    #restaurant {
-        height: 130vh;
-    }
+  #welcome,
+  #restaurant {
+    height: 125vh;
+  }
 
-    .restaurant-info {
-        bottom: -142%;
-        height: 370px;
-    }
+  .welcome-img,
+  .restaurant-img {
+    width: 93.5%;
+  }
 
-    .spa-info {
-        width: 75%;
-        height: 465px;
-    }
+  .welcome-img-container,
+  .restaurant-img-container {
+    height: 30%;
+  }
 
-    .spa-info h4 {
-        margin-top: 1rem;
-    }
+  .welcome-img-container img {
+    object-position: center;
+  }
 
-    footer .address {
-        width: 55%;
-    }
+  .welcome-info,
+  .restaurant-info {
+    width: 90%;
+    height: 450px;
+    padding: 0 1rem 1rem 1rem;
+    bottom: 4rem;
+  }
 
-    footer .media {
-        width: 30%;
-    }
+  .welcome-info p,
+  .restaurant-info p,
+  .info-text p,
+  .spa-info p {
+    font-size: 0.96rem;
+  }
 
-    .media .social-icons {
-        width: 50%;
-    }
+  .rooms-img-container {
+    width: 94%;
+    height: 50%;
+  }
 
-    footer .newsletter {
-        width: 55%;
-    }
+  .rooms-title {
+    width: 100%;
+  }
 
-      .thank-you p {
-        margin-top: 2rem;
-    }
+  .rooms-btns button {
+    width: 12%;
+  }
+
+  .spa-info {
+    width: 75%;
+    height: 465px;
+  }
+
+  .spa-info h4 {
+    margin-top: 1rem;
+  }
+
+  footer .address {
+    width: 55%;
+  }
+
+  footer .media {
+    width: 30%;
+  }
+
+  .media .social-icons {
+    width: 50%;
+  }
+
+  footer .newsletter {
+    width: 55%;
+  }
+
+  .thank-you p {
+    margin-top: 2rem;
+  }
+
+  /* Reservation Modal */
+
+  .reservation {
+    padding-left: 0.5rem;
+  }
+
+  .reservation form {
+    width: 290px;
+  }
+
+  .reservation form .arrow {
+    height: 20px;
+    width: 20px;
+    top: 30%;
+  }
+
+  form .arrow img {
+    transform: translateX(-0.1px);
+  }
+
+  .reservation .persons {
+    width: 80px;
+    right: 0.5rem;
+  }
+
+  .persons img {
+    width: 12px;
+  }
+
+  .booking-room {
+    height: 110%;
+  }
+
+  .booking-room-info {
+    order: 2;
+    width: 60%;
+    height: 50%;
+  }
+
+  .booking-room-info h3 {
+    margin-top: 0.5rem;
+  }
+
+  .booking-room-info .room-info-txt {
+    margin-bottom: 3rem;
+  }
+
+  .booking-room-img {
+    order: 1;
+    width: 100%;
+    height: 50%;
+  }
+
+  .booking-room-price {
+    width: 40%;
+    height: 50%;
+    flex-direction: column;
+    align-self: auto;
+  }
+
+  .booking-price {
+    width: 100%;
+    height: 80%;
+    padding: 0 0 0.5rem 0;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+
+  .booking-price :nth-child(2) {
+    margin: 0;
+  }
+
+  .price {
+    margin-bottom: auto;
+    margin-right: 0;
+    align-self: flex-end;
+  }
+
+  .booking-room-price button {
+    height: 20%;
+    width: 100%;
+  }
+
+  .calendar-container.right::before {
+    right: 40%;
+  }
+
+  .calendar-container {
+    left: 45%;
+  }
+
+  /* Room info */
+  .booking-rooms .room {
+    height: 160%;
+    grid-template-rows: repeat(30, 1fr);
+  }
+
+  .booking-rooms .room .room-img {
+    grid-column: 2/25;
+  }
+
+  .booking-rooms .room .room-txt-one {
+    grid-column: 2/25;
+    grid-row: 15/21;
+  }
+  .booking-rooms .room .room-txt-one img {
+    width: 25px;
+  }
+  .booking-rooms .room .room-txt-two {
+    font-size: 1rem;
+    grid-column: 2/25;
+    grid-row: 22/31;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .logo {
-        margin-left: 0;
-    }
+  .logo {
+    margin-left: 0;
+  }
 
-    .book-online button {
-        font-size: 1rem;
-    }
+  .book-online button {
+    font-size: 1rem;
+  }
 
-    .menu p,
-    .menu .fas {
-        font-size: 1.1rem;
-    }
+  .menu p,
+  .menu .fas {
+    font-size: 1.1rem;
+  }
 
-    .menu .fas {
-        transform: translateY(3px);
-    }
+  .menu .fas {
+    transform: translateY(3px);
+  }
 
-    .hero-container {
-        background-position: bottom;
-        height: 90vh;
-    }
+  .calendar-box {
+    width: 80%;
+    height: 13%;
+    height: 90px;
+  }
 
-    .slogan p {
-        font-size: 4rem;
-    }
+  .hero-container {
+    background-position: bottom;
+    height: 90vh;
+  }
 
-    #special-offers {
-        height: 70vh;
-    }
+  .slogan p {
+    font-size: 4rem;
+  }
 
-    .offers {
-        height: 85%;
-    }
+  #special-offers {
+    height: 70vh;
+  }
 
-    #welcome {
-        height: 115vh;
-    }
+  .offers {
+    height: 85%;
+  }
 
-    .welcome-img,
-    .restaurant-img {
-        width: 92.5%;
-        height: 30%;
-        margin-top: 4rem;
-    }
+  #welcome,
+  #restaurant {
+    height: 135vh;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -185%;
-        width: 88%;
-        height: 370px;
-    }
+  .welcome-img,
+  .restaurant-img {
+    width: 92.5%;
+  }
 
-    #rooms {
-        height: 110vh;
-    }
+  .welcome-info,
+  .restaurant-info {
+    height: 470px;
+    bottom: 3rem;
+  }
 
-    .rooms-info {
-        margin-top: 1rem;
-    }
+  #rooms {
+    height: 100vh;
+  }
 
-    .rooms-btns {
-        height: 12%;
-    }
+  .rooms-btns {
+    height: 12%;
+  }
 
-    .rooms-btns button {
-        width: 14%;
-    }
+  .rooms-btns button {
+    width: 14%;
+  }
 
-    .rooms-title h1 {
-        font-size: 1.3rem;
-    }
+  .rooms-title h1 {
+    font-size: 1.3rem;
+  }
 
-    .rooms-properties {
-        justify-content: space-between;
-        width: 11rem;
-    }
+  .rooms-properties {
+    justify-content: space-between;
+    width: 11rem;
+  }
 
-    #restaurant {
-        height: 115vh;
-    }
+  .info-text h1,
+  .restaurant-info h1,
+  .spa-info h1 {
+    font-size: 1.35rem;
+  }
 
-    .restaurant-info {
-        bottom: -187%;
-        height: 380px;
-    }
+  .spa-info {
+    height: 75%;
+    width: 85%;
+  }
 
-    .info-text h1,
-    .restaurant-info h1,
-    .spa-info h1 {
-        font-size: 1.35rem;
-    }
+  footer {
+    height: 100vh;
+    align-items: center;
+  }
 
-    .spa-info {
-        height: 75%;
-        width: 85%;
-    }
+  footer .address,
+  footer .newsletter,
+  footer .media {
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    margin-top: 2rem;
+  }
 
-    footer {
-        height: 100vh;
-        align-items: center;
-    }
+  footer .newsletter {
+    width: 70%;
+  }
 
-    footer .address,
-    footer .newsletter,
-    footer .media {
-        width: 100%;
-        height: 30%;
-        align-items: center;
-        margin-top: 2rem;
-    }
+  footer .address {
+    order: 1;
+  }
 
-    footer .newsletter {
-        width: 70%;
-    }
+  footer .newsletter {
+    order: 2;
+  }
 
-    footer .address {
-        order: 1;
-    }
+  footer .media {
+    order: 3;
+    height: 10%;
+  }
 
-    footer .newsletter {
-        order: 2;
-    }
+  footer .media h2,
+  footer .media .social-icons {
+    display: none;
+  }
 
-    footer .media {
-        order: 3;
-        height: 10%;
-    }
+  .media .author {
+    width: 48%;
+    display: flex;
+    justify-content: space-between;
+  }
 
-    footer .media h2,
-    footer .media .social-icons {
-        display: none;
-    }
+  /* Reservation Modal */
+  .modal-container {
+    width: 95vw;
+  }
 
-    .media .author {
-        width: 48%;
-        display: flex;
-        justify-content: space-between;
-    }
+  .reservation .persons {
+    width: 70px;
+  }
 }
 
 @media screen and (max-width: 430px) {
-    .logo img {
-        width: 6rem;
-        height: 4rem;
-    }
+  .logo img {
+    width: 6rem;
+    height: 4rem;
+  }
 
-    .book-online {
-        width: 40%;
-    }
+  .book-online {
+    width: 40%;
+  }
 
-    .menu {
-        justify-content: center;
-    }
+  .menu {
+    justify-content: center;
+  }
 
-    .menu p {
-        display: none;
-    }
+  .menu p {
+    display: none;
+  }
 
-    .hero-container {
-        height: 95vh;
-    }
+  .hero-container {
+    height: 95vh;
+  }
 
-    #special-offers {
-        height: 95vh;
-    }
+  #special-offers {
+    height: 95vh;
+  }
 
-    #welcome {
-        height: 120vh;
-    }
+  #welcome,
+  #restaurant {
+    height: 120vh;
+  }
 
-    .welcome-img,
-    .restaurant-img {
-        width: 92%;
-        height: 28%;
-        margin-top: 2rem;
-    }
+  .welcome-img,
+  .restaurant-img {
+    width: 92%;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -230%;
-        width: 85%;
-        height: 460px;
-    }
+  .welcome-info,
+  .restaurant-info {
+    height: 520px;
+    bottom: 2rem;
+  }
 
-    #rooms {
-        height: 100vh;
-    }
+  #rooms {
+    height: 90vh;
+  }
 
-    .rooms-info {
-        height: 32%;
-        margin-top: 0;
-    }
+  .rooms-info {
+    height: 32%;
+    margin-top: 0;
+  }
 
-    .rooms-info .info-text {
-        width: 93%;
-        height: 92%;
-    }
+  .rooms-info .info-text {
+    width: 93%;
+    height: 92%;
+  }
 
-    .rooms-info .info-text p {
-        font-size: 0.9rem;
-    }
+  .rooms-info .info-text p {
+    font-size: 0.9rem;
+  }
 
-    .rooms-img-container {
-        width: 93%;
-        height: 50%;
-    }
+  .rooms-img-container {
+    width: 93%;
+    height: 50%;
+  }
 
-    .rooms-title h1 {
-        font-size: 1.3rem;
-    }
+  .rooms-title h1 {
+    font-size: 1.3rem;
+  }
 
-    .rooms-properties {
-        margin-top: 0;
-        margin-right: 1rem;
-        width: 10rem;
-    }
+  .rooms-properties {
+    margin-top: 0;
+    margin-right: 1rem;
+    width: 10rem;
+  }
 
-    .rooms-title button {
-        width: 7rem;
-        margin-left: 1.5rem;
-    }
+  .rooms-title button {
+    width: 7rem;
+    margin-left: 1.5rem;
+  }
 
-    #restaurant {
-        height: 115vh;
-    }
+  .spa-info {
+    height: 80%;
+  }
 
-    .restaurant-img {
-        margin-top: 2rem;
-    }
+  .spa-info h1,
+  .spa-info h4 {
+    margin-bottom: 0.5rem;
+  }
 
-    .restaurant-info {
-        bottom: -230%;
-        height: 440px;
-    }
+  .spa-info p {
+    font-size: 0.9rem;
+  }
 
-    .spa-info {
-        height: 80%;
-    }
+  footer {
+    height: 80vh;
+  }
 
-    .spa-info h1,
-    .spa-info h4 {
-        margin-bottom: 0.5rem;
-    }
+  footer .address,
+  footer .newsletter {
+    height: 40%;
+  }
 
-    .spa-info p {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        height: 80vh;
-    }
-
-    footer .address,
-    footer .newsletter {
-        height: 40%;
-    }
-
-    .media .author {
-        width: 60%;
-    }
+  .media .author {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .book-online {
-        width: 35%;
-    }
+  .book-online {
+    width: 35%;
+  }
 
-    .hero-container {
-        height: 100vh;
-    }
+  .hero-container {
+    height: 100vh;
+  }
 
-    #special-offers {
-        height: 100vh;
-    }
+  #special-offers {
+    height: 100vh;
+  }
 
-    .offers-container {
-        width: 98vw;
-        height: 75%;
-    }
+  .offers-container {
+    width: 98vw;
+    height: 75%;
+  }
 
-    .offers {
-        height: 70%;
-    }
+  .offers {
+    height: 70%;
+  }
 
-    .offer-title {
-        height: 24%;
-    }
+  .offer-title {
+    height: 24%;
+  }
 
-    #welcome {
-        height: 124vh;
-    }
+  #welcome,
+  #restaurant {
+    height: 130vh;
+  }
 
-    .info-text h1,
-    .rooms-title h1 {
-        font-size: 1.1rem;
-    }
+  .welcome-info,
+  .restaurant-info {
+    height: 550px;
+  }
 
-    .rooms-title button {
-        margin-left: 1rem;
-    }
+  .info-text h1,
+  .rooms-title h1 {
+    font-size: 1.1rem;
+  }
 
-    .rooms-properties {
-        width: 8rem;
-    }
+  .rooms-title button {
+    margin-left: 1rem;
+  }
 
-    #restaurant {
-        height: 122vh;
-    }
+  .rooms-properties {
+    width: 8rem;
+  }
 
-    .restaurant-info {
-        bottom: -225%;
-    }
+  #spa {
+    height: 100vh;
+    background-position: 65% 80%;
+  }
 
-    #spa {
-        height: 100vh;
-        background-position: 65% 80%;
-    }
+  .spa-info {
+    width: 82%;
+    height: 500px;
+  }
 
-    .spa-info {
-        width: 82%;
-        height: 500px;
-    }
+  .restaurant-info h1 {
+    font-size: 1.1rem;
+  }
 
-    .restaurant-info h1 {
-        font-size: 1.1rem;
-    }
+  .spa-info h1 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
 
-    .spa-info h1 {
-        font-size: 1.1rem;
-        margin-top: 1rem;
-    }
+  footer .address img {
+    margin: 0;
+  }
 
-    footer .address img {
-        margin: 0;
-    }
+  footer .newsletter {
+    width: 80%;
+  }
 
-    footer .newsletter {
-        width: 80%;
-    }
+  footer .newsletter h2 {
+    font-size: 1.3rem;
+  }
 
-    footer .newsletter h2 {
-        font-size: 1.3rem;
-    }
-
-    .media .author {
-        width: 59%;
-    }
-
-  
+  .media .author {
+    width: 59%;
+  }
 }
 
 @media screen and (max-width: 350px) {
+  .logo img {
+    width: 5rem;
+    height: 3.5rem;
+  }
 
-    .logo img{
-        width: 5rem;
-        height: 3.5rem;
-    }
+  .menu {
+    height: 100%;
+  }
 
-    .menu{
-        height: 100%;
-    }
-    .book-online{
-        width: 35%;
-    }
+  .book-online {
+    width: 35%;
+  }
 
-    .book-online button{
-        font-size: 0.95rem;
-    }
-   
-    #welcome {
-        height: 135vh;
-    }
-    
-    .welcome-img,
-    .restaurant-img {
-        height: 23%;
-    }
+  .book-online button {
+    font-size: 0.95rem;
+  }
 
-    .welcome-info,
-    .restaurant-info {
-        bottom: -300%;
-        height: 500px;
-        width: 100%;
-        padding: 0;
-    }
-    
-    .welcome-info p,
-    .restaurant-info p {
-        margin: 0.8rem 1rem;
-    }
+  .welcome-info,
+  .restaurant-info {
+    height: 500px;
+    width: 100%;
+    padding: 0;
+  }
 
-    .rooms-img-container {
-        width: 93%;
-        height: 45%;
-    }
+  .welcome-info p,
+  .restaurant-info p {
+    margin: 0.8rem 1rem;
+  }
 
-    .rooms-title h1 {
+  .rooms-img-container {
+    width: 93%;
+    height: 45%;
+  }
+
+  .rooms-title h1 {
     margin: 0.3rem 0 0 1rem;
-}
+  }
 
- .rooms-properties p {
+  .rooms-properties p {
     font-size: 0.9rem;
- }
-    
-    #restaurant {
-        height: 123vh;
-    }
+  }
 
-    .restaurant-info {
+  .spa-info {
+    height: 540px;
+  }
 
-        height: 460px;
-    }
-
-    .spa-info {
-        height: 540px;
-    }
-
-    .media .author {
-        width: 66%;
-    }
+  .media .author {
+    width: 66%;
+  }
 }

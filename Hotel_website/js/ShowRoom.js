@@ -1,5 +1,6 @@
 import { reservCon } from "./Calendar.js";
 
+
 /* Show selected room during reservation */
 
 const showRoom = (name, img, board, deposit) => {
@@ -16,7 +17,7 @@ const showRoom = (name, img, board, deposit) => {
                     </div>
                     <div class="room-txt-one">
                         <h2>${name}</h2>
-                        <p><img src="icons/shield.png" alt="">Covid-19 Free. Full apartment disinfection.</p>
+                        <p><img src="icons/shield.png" alt="">Covid-19 disinfection.</p>
                         <p><img src="icons/decline.png" alt="">Nonrefundable offer</p>
                         <p><img src="icons/money.png" alt="">${deposit}</p>
                         <p><img src="icons/breakfast.png" alt="">${board}</p>

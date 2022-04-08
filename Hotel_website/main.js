@@ -96,7 +96,8 @@ calendarCon.innerHTML = `
                     <div class="date-month">
                         <p>${new Date().toLocaleString("default", {
                           month: "long",
-                        })}</p>
+                        })}
+                        </p>
                         <p>${new Date().getFullYear()}</p>
                     </div>
                     <div class="date-icon"><img src="icons/calendar.png" alt=""></div>
@@ -251,7 +252,9 @@ newsletterBtn.addEventListener("click", () => {
   }
 });
 
+
 window.addEventListener("resize", () => {
+  $(".width").innerText = `${window.innerWidth} PX`;
   if (window.innerWidth <= 900) {
     $(".menu").classList.remove("hide-element");
   } else {
@@ -262,6 +265,7 @@ window.addEventListener("resize", () => {
   }
 });
 
+/* Menu Btns */
 if (window.innerWidth <= 900) {
   $(".menu").classList.remove("hide-element");
 } else {
@@ -276,6 +280,7 @@ showMenuBtn.addEventListener("click", () => {
   showMenuBtn.classList.add("hide-element");
   sidebar.classList.add("show-sidebar");
   nav.classList.add("fixed-nav");
+  document.body.classList.add("no-scrolling");
 
   if (sidebar.classList.contains("show-sidebar")) nav.style.animation = "none";
 });
@@ -284,6 +289,8 @@ hideMenuBtn.addEventListener("click", () => {
   hideMenuBtn.classList.add("hide-element");
   showMenuBtn.classList.remove("hide-element");
   sidebar.classList.remove("show-sidebar");
+  nav.classList.remove("fixed-nav");
+document.body.classList.remove("no-scrolling");
 });
 
 scrollLinks.forEach((link) => {
@@ -295,7 +302,6 @@ scrollLinks.forEach((link) => {
 });
 
 window.onbeforeunload = () => window.scrollTo(0);
-
 
 /* CALENDAR */
 weekdays.innerHTML = daysOfWeek.map((day) => `<div>${day}</div>`).join("");
@@ -391,7 +397,6 @@ modal.addEventListener("click", (e) => {
     }
     calendar.classList.remove("open-modal");
   }
-
 });
 
 /* Change number of persons */
