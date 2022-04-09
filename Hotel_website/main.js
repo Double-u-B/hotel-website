@@ -1,5 +1,4 @@
 import { offers, welcomeImgs, months, daysOfWeek } from "./js/data.js";
-
 import { showMenuLinks, showSocialLinks } from "./js/Links.js";
 import { shadow, greeting } from "./js/GreetingShadow.js";
 import { checkWindowWidth } from "./js/Slider.js";
@@ -12,8 +11,6 @@ import {
   date,
   heading,
   year,
-  // leftArrow,
-  // rightArrow,
   monthDays,
   weekdays,
   calendarCon,
@@ -38,7 +35,7 @@ const nav = $("nav");
 
 const logo = $(".logo img");
 const socialNavIcons = $(".social");
-const bookBtn = $(".book-online ");
+const bookBtn = $(".book-online");
 const showMenuBtn = $(".menu .fa-bars");
 const hideMenuBtn = $(".menu .fa-times");
 const sidebar = $(".sidebar");
@@ -48,9 +45,6 @@ const menuLinksContainer = $(".menu-links");
 const offersCon = $(".offers-container");
 const nextOfferBtn = $(".next-offer .fa-long-arrow-alt-right");
 const prevOfferBtn = $(".prev-offer .fa-long-arrow-alt-left");
-
-// const nextRoomBtn = $(".rooms-btns .next-room");
-// const prevRoomBtn = $(".rooms-btns .prev-room");
 
 const welcomeInfo = $(".welcome-info");
 const welcomeImg = $(".welcome-img-container");
@@ -84,7 +78,6 @@ let firstSelect = "";
 let lastSelect = "";
 
 let counter = 0;
-// let roomImgCounter = 0;
 
 /* Greeting calendar */
 
@@ -229,7 +222,6 @@ scrollLinks.forEach((link) => {
   });
 });
 
-// logo.addEventListener("click", () => location.reload());
 logo.addEventListener("click", () =>
   window.scrollTo({
     left: 0,
@@ -252,8 +244,13 @@ newsletterBtn.addEventListener("click", () => {
   }
 });
 
-
 window.addEventListener("resize", () => {
+  if ($(".room") && window.innerWidth > 600) {
+    roomsCon.style.overflowY = "hidden";
+  } else {
+    roomsCon.removeAttribute("style");
+  }
+
   $(".width").innerText = `${window.innerWidth} PX`;
   if (window.innerWidth <= 900) {
     $(".menu").classList.remove("hide-element");
@@ -289,8 +286,7 @@ hideMenuBtn.addEventListener("click", () => {
   hideMenuBtn.classList.add("hide-element");
   showMenuBtn.classList.remove("hide-element");
   sidebar.classList.remove("show-sidebar");
-  nav.classList.remove("fixed-nav");
-document.body.classList.remove("no-scrolling");
+  document.body.classList.remove("no-scrolling");
 });
 
 scrollLinks.forEach((link) => {
@@ -298,6 +294,7 @@ scrollLinks.forEach((link) => {
     hideMenuBtn.classList.add("hide-element");
     showMenuBtn.classList.remove("hide-element");
     sidebar.classList.remove("show-sidebar");
+    document.body.classList.remove("no-scrolling");
   });
 });
 
@@ -322,23 +319,17 @@ renderCalendar();
 calendarCon.addEventListener("click", () => {
   modal.classList.add("open-modal");
   document.body.classList.add("no-scrolling");
-  // roomsCon.innerHTML = "";
 });
 bookBtn.addEventListener("click", () => {
   modal.classList.add("open-modal");
   document.body.classList.add("no-scrolling");
-  // roomsCon.innerHTML = "";
 });
 
 inputArr.addEventListener("click", () => {
   calendar.classList.add("open-modal");
   calendar.classList.remove("right");
   calendar.classList.add("left");
-  // if (firstSelect !== "" && lastSelect !== "") {
-  // inputArr.value = "";
-  // inputDep.value = "";
-  // lastSelect = "";
-  // }
+
   firstSelect = "";
 
   inputDepLab.classList.add("avoid-clicks");
@@ -351,7 +342,6 @@ inputDep.addEventListener("click", () => {
   if (firstSelect === "" && lastSelect === "") {
     inputArr.value = "";
     inputDep.value = "";
-    // firstSelect = "";
   }
 
   calendar.classList.remove("left");
@@ -417,20 +407,6 @@ plusBtn.addEventListener("click", () => {
   roomsCon.innerHTML = showRooms();
   checkConditionsLoop();
 });
-
-// /* Change Month */
-
-// leftArrow.addEventListener("click", () => {
-//   date.setMonth(date.getMonth() - 1);
-//   if (date.getMonth() > 10) year = date.getFullYear();
-//   renderCalendar();
-// });
-
-// rightArrow.addEventListener("click", () => {
-//   date.setMonth(date.getMonth() + 1);
-//   if (date.getMonth() < 1) year = date.getFullYear();
-//   renderCalendar();
-// });
 
 /* Select days of reservation */
 
@@ -499,9 +475,6 @@ monthDays.addEventListener("click", (e) => {
 
   if (firstSelect !== "" && lastSelect !== "") {
     roomsCon.innerHTML = showRooms();
-    // roomsCon.addEventListener("click", (e) =>
-    //   console.log(e.target.parentElement.previousElementSibling.children[3].innerText)
-    // );
     checkConditionsLoop();
   }
 

@@ -10,7 +10,6 @@ import {
   personNmbCon,
   gratitude,
 } from "../main.js";
-import { rooms } from "./data.js";
 
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
@@ -31,9 +30,11 @@ const checkConditionsLoop = () => {
         e.target.parentElement.previousElementSibling.children[2].innerText;
 
       roomsCon.innerHTML = showRoom(name, img, board, deposit);
-      if ($(".room") && window.innerWidth > 600) {
-        roomsCon.style.overflowY = "hidden";
-      }
+      window.addEventListener("resize", () => {
+        if ($(".room") && window.innerWidth > 600) {
+          roomsCon.style.overflowY = "hidden";
+        }
+      });
       roomsCon.scrollTo(0, 0);
       const backBtn = $(".back-btn");
 
@@ -68,16 +69,10 @@ const checkConditionsLoop = () => {
       const termsInput = $("input[id=terms");
       const termsInputLabel = $("label[for=terms]");
 
-      // const reservForm = $(".reservation form");
-      // const personNmbCon = $(".reservation .persons");
-      // const gratitude = $(".reservation h2");
-
       const confResBtn = $(".sum-payment button");
 
       confResBtn.addEventListener("click", () => {
         if (
-          // nameInput.value.match(/^[a-zA-Z-'. ]+$/) &&
-          // surnameInput.value.match(/^[a-zA-Z-'. ]+$/) &&
           !(
             nameInput.value.match(/^[^a-z]+$/i) ||
             nameInput.value.match(/\d/) ||
@@ -105,14 +100,22 @@ const checkConditionsLoop = () => {
                     <p>We are looking forward to see you soon in our hotel!</p>
                 </div>`;
         } else {
+          roomsCon.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+          });
+
           (nameInput.value.match(/^[^a-z]+$/i) ||
             nameInput.value.match(/\d/) ||
             nameInput.value === "") &&
             error(nameInput);
+
           (surnameInput.value.match(/^[^a-z]+$/i) ||
             surnameInput.value.match(/\d/) ||
             surnameInput.value === "") &&
             error(surnameInput);
+
           !phoneInput.value.match(/^[0-9]+$/) && error(phoneInput);
           !isValidEmail(emailInput.value) && error(emailInput);
 

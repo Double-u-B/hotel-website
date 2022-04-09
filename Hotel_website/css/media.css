@@ -152,7 +152,7 @@
   }
 
   /* Summary */
-  .booking-rooms .summary{
+  .booking-rooms .summary {
     grid-template-columns: repeat(29, 1fr);
   }
   .sum-data {
@@ -166,9 +166,8 @@
   }
 
   .sum-payment {
-  grid-column: 18/29;
+    grid-column: 18/29;
     grid-row: 4/25;
-
   }
 }
 
@@ -573,6 +572,44 @@
   .booking-rooms .room .room-txt-two {
     grid-row: 17/25;
   }
+
+  /* Summary */
+
+  .booking-rooms .summary {
+    grid-template-rows: repeat(49, 1fr);
+  }
+
+  .booking-rooms .summary {
+    height: 210%;
+  }
+
+  .sum-data {
+    grid-column: 2/29;
+    grid-row: 4/27;
+  }
+
+  .sum-payment {
+    grid-column: 2/29;
+    grid-row: 28/50;
+  }
+  .sum-payment-dates {
+    grid-template-columns: repeat(26, 1fr);
+  }
+
+  .sum-payment-dates img {
+    grid-column: 14/15;
+  }
+
+  .sum-payment-dates .dates-from {
+    grid-column: 1/12;
+  }
+  .sum-payment-dates .dates-to {
+    grid-column: 17/-1;
+  }
+
+  .sum-payment button {
+    grid-row: 22/25;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -971,6 +1008,25 @@
     font-size: 1rem;
     grid-column: 2/25;
     grid-row: 22/31;
+  }
+
+  /* Summary */
+
+  .booking-rooms .summary {
+    height: 250%;
+  }
+  .sum-data form {
+    grid-column: 3/23;
+  }
+  .sum-payment-room {
+    grid-row: 8/10;
+  }
+  .sum-payment-total {
+    grid-row: 12/18;
+  }
+  .sum-payment-info {
+    grid-row: 19/21;
+    grid-column: 4/-4;
   }
 }
 
