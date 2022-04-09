@@ -6,7 +6,7 @@ let roomImgCounter = 0;
 
 roomsImgCon.innerHTML = `
 <div class="rooms-img">
-<img src="img/rooms/deluxe_double.jpg" alt="">
+<img src="img/rooms/deluxe_double.webp" alt="room image">
 <div class="rooms-title">
 <h1>Deluxe Twin</h1>
 <div class="rooms-properties">
@@ -17,10 +17,10 @@ roomsImgCon.innerHTML = `
 </div>
 </div>
 <div class="rooms-btns">
-<button class="prev-room">
+<button class="prev-room" aria-label="Previous Room">
 <i class="fas fa-long-arrow-alt-left"></i>
 </button>
-<button class="next-room">
+<button class="next-room" aria-label="Next Room">
 <i class="fas fa-long-arrow-alt-right"></i>
 </button>
 </div>`;
@@ -35,7 +35,7 @@ const roomImgSlide = () => {
   if (roomImgCounter < 0) roomImgCounter = rooms.length - 1;
 
   roomImg.innerHTML = `
-       <img src="img/rooms/${rooms[roomImgCounter].img}.jpg" alt="${rooms[roomImgCounter].title}" />
+       <img src="img/rooms/${rooms[roomImgCounter].img}.webp" alt="${rooms[roomImgCounter].title}" />
         <div class="rooms-title">
                     <h1>${rooms[roomImgCounter].title}</h1>
                     <div class="rooms-properties">

@@ -9,7 +9,7 @@ const showRooms = () => {
       const { img, title, deposit, board, price } = room;
       return `<div class="booking-room">
                     <div class="booking-room-img">
-                        <img src="img/rooms/${img}.jpg" alt="${title}">
+                        <img src="img/rooms/${img}.webp" alt="${title}">
                     </div>
                     <div class="booking-room-info">
                         <h3>${title.toUpperCase()}</h3>

@@ -1,28 +1,28 @@
 /* Hotel */
 const offers = [
   {
-    img: "img/offers/all_inclusive.jpg",
+    img: "img/offers/all_inclusive.webp",
     title: "HOLIDAYS ALL INCLUSIVE",
     board: "FB - Full Board",
     length: "min. 2 nights",
     desc: "In a healthy body, healthy mind. Choose active relaxation with energetic meals by the sea and strengthen  immunity. Validity period: 04.01-31.03.2021",
   },
   {
-    img: "img/offers/vocations.jpg",
+    img: "img/offers/vocations.webp",
     title: "Holidays by the sea",
     board: "Breakfast and Dinner",
     length: "min. 2 nights",
     desc: "In a healthy body, healthy mind. Choose active relaxation with energetic meals by the sea and strengthen your immunity. Validity period: 04.01-31.03.2021",
   },
   {
-    img: "img/offers/family.jpg",
+    img: "img/offers/family.webp",
     title: "Sports Active",
     board: "FB - Full Board",
     length: "min. 5 nights",
     desc: "In a healthy body, healthy mind. Choose active relaxation with energetic meals by the sea and strengthen  immunity. Validity period: 04.01-31.03.2021",
   },
   {
-    img: "img/offers/spa.jpg",
+    img: "img/offers/spa.webp",
     title: "SPA for everyone",
     board: "Breakfast and Dinner",
     length: "min. 3 nights",

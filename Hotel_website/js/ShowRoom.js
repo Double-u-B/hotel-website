@@ -9,7 +9,7 @@ const showRoom = (name, img, board, deposit) => {
   return `<div class="room">
                     <div class="move-back">
                         <button class="back-btn">
-                            <img src="icons/left-arrow.png" alt="">
+                            <img src="icons/left-arrow.png" alt="icon">
                         </button>
                     </div>
                     <div class="room-img">

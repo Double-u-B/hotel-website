@@ -8,7 +8,7 @@ const summary = (name, total, deposit) => {
   return `<div class="summary">
                     <div class="move-back">
                         <button class="back-btn">
-                            <img src="icons/left-arrow.png" alt="">
+                            <img src="icons/left-arrow.png" alt="icon">
                         </button>
                     </div>
                     <div class="sum-data">
@@ -27,7 +27,7 @@ const summary = (name, total, deposit) => {
                         </form>
                         <div class="sum-data-confirmations">
                             <input type="checkbox" id="invoice">
-                            <label for="invoice">I would like recieve invoice.</label>
+                            <label for="invoice">I would like receive invoice.</label>
 
                             <input type="checkbox" id="terms" required>
                             <label for="terms">I understand that by clicking "BOOK NOW" I have read and agreed to the terms and conditions of the: <a
@@ -53,7 +53,7 @@ const summary = (name, total, deposit) => {
                                   firstSelect
                                 ).toDateString()}</strong> <br/> from 15:00</p>
                             </div>
-                            <img src="icons/arrow.png" alt="">
+                            <img src="icons/arrow.png" alt="icon">
                             <div class="dates-to">
                                 <p><strong>${new Date(
                                   lastSelect

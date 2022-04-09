@@ -93,7 +93,7 @@ calendarCon.innerHTML = `
                         </p>
                         <p>${new Date().getFullYear()}</p>
                     </div>
-                    <div class="date-icon"><img src="icons/calendar.png" alt=""></div>
+                    <div class="date-icon"><img src="icons/calendar.png" alt="icon"></div>
                 </div>
                 <div class="date-to">
                     <div class="date-day">
@@ -105,7 +105,7 @@ calendarCon.innerHTML = `
                         })}</p>
                         <p>${new Date().getFullYear()}</p>
                     </div>
-                    <div class="date-icon"><img src="icons/calendar.png" alt=""></div>
+                    <div class="date-icon"><img src="icons/calendar.png" alt="icon"></div>
                 </div>
                 <button>book online</button>`;
 
@@ -198,11 +198,11 @@ window.addEventListener("scroll", () => {
 /* Welcome images slider */
 // connected with CSS keyframes
 welcomeImg.innerHTML = `
-<img src="img/welcome/${welcomeImgs[0]}.jpg" alt="${welcomeImgs[0]}">
-<img src="img/welcome/${welcomeImgs[1]}.jpg" alt="${welcomeImgs[1]}">
-<img src="img/welcome/${welcomeImgs[2]}.jpg" alt="${welcomeImgs[2]}">
-<img src="img/welcome/${welcomeImgs[3]}.jpg" alt="${welcomeImgs[3]}">
-<img src="img/welcome/${welcomeImgs[4]}.jpg" alt="${welcomeImgs[4]}">`;
+<img src="img/welcome/${welcomeImgs[0]}.webp" alt="${welcomeImgs[0]}">
+<img src="img/welcome/${welcomeImgs[1]}.webp" alt="${welcomeImgs[1]}">
+<img src="img/welcome/${welcomeImgs[2]}.webp" alt="${welcomeImgs[2]}">
+<img src="img/welcome/${welcomeImgs[3]}.webp" alt="${welcomeImgs[3]}">
+<img src="img/welcome/${welcomeImgs[4]}.webp" alt="${welcomeImgs[4]}">`;
 
 /* scrollTo */
 const scrollLinks = $$(".scroll-link");
@@ -251,7 +251,7 @@ window.addEventListener("resize", () => {
     roomsCon.removeAttribute("style");
   }
 
-  $(".width").innerText = `${window.innerWidth} PX`;
+  // $(".width").innerText = `${window.innerWidth} PX`;
   if (window.innerWidth <= 900) {
     $(".menu").classList.remove("hide-element");
   } else {
