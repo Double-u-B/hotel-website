@@ -1,4 +1,4 @@
-import { firstSelect, lastSelect, nbrOfPer } from "../main.js";
+import { firstSelect, lastSelect, nbrOfPer } from "./main.js";
 import { reservCon } from "./Calendar.js";
 
 

@@ -1,5 +1,5 @@
 import { rooms } from "./data.js";
-import { nbrOfPer, bookedDays } from "../main.js";
+import { nbrOfPer, bookedDays } from "./main.js";
 
 /* Show apartments during reservation */
 

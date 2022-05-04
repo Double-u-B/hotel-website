@@ -1,4 +1,5 @@
 import { rooms } from "./data.js";
+
 const $ = document.querySelector.bind(document);
 
 const roomsImgCon = $(".rooms-img-container");

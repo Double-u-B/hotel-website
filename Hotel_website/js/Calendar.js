@@ -1,5 +1,5 @@
-import { months} from "./data.js";
-import { inputArr, inputDep} from "../main.js";
+import { months } from "./data.js";
+import { inputArr, inputDep } from "./main.js";
 
 const $ = document.querySelector.bind(document);
 
@@ -22,20 +22,31 @@ const plusBtn = $(".plus");
 
 let personsNbrCon = $(".nbr-of-persons");
 
-
 const renderCalendar = () => {
   let days = "";
-  const firstDayIndex = new Date(date.getFullYear(), date.getMonth(), 1).getDay() - 1;
+  const firstDayIndex =
+    new Date(date.getFullYear(), date.getMonth(), 1).getDay() - 1;
 
-  const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+  const lastDay = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
 
-  const prevLastDay = new Date(date.getFullYear(), date.getMonth(), 0).getDate();
+  const prevLastDay = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    0
+  ).getDate();
 
-  const lastDayIndex = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay() - 1;
+  const lastDayIndex =
+    new Date(date.getFullYear(), date.getMonth() + 1, 0).getDay() - 1;
 
   const nextDays = 6 - lastDayIndex;
 
-  heading.innerHTML = `<h1>${months[date.getMonth()]} <span class="small">'${year.toString().substr(-2)}</span></h1>
+  heading.innerHTML = `<h1>${
+    months[date.getMonth()]
+  } <span class="small">'${year.toString().substr(-2)}</span></h1>
 <p>${new Date().toLocaleDateString("en", {
     month: "2-digit",
     year: "numeric",
@@ -50,7 +61,7 @@ const renderCalendar = () => {
   for (let i = 1; i <= lastDay; i++) {
     if (
       ((i == inputArr.value.slice(0, 2) &&
-          date.getMonth() == inputArr.value.slice(3, 5) - 1) ||
+        date.getMonth() == inputArr.value.slice(3, 5) - 1) ||
         (i == inputDep.value.slice(0, 2) &&
           date.getMonth() == inputDep.value.slice(3, 5) - 1)) &&
       (year == inputArr.value.slice(6) || year == inputDep.value.slice(6))
@@ -86,8 +97,6 @@ rightArrow.addEventListener("click", () => {
   if (date.getMonth() < 1) year = date.getFullYear();
   renderCalendar();
 });
-
-
 
 export {
   renderCalendar,
